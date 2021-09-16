@@ -1,0 +1,67 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <title>Imersão Dev - Aula 01</title>
+  </head>
+
+  <body>
+    <html>
+      <header>
+        <title>Canoa</title>
+      </header>
+
+        <div class="container">
+          <h1 class="page-title">
+            Como está sua Sorte hoje?
+          </h1>
+          <img
+            src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-mentalista.svg"
+            class="page-logo"
+            alt=""
+          /><br />
+          <p class="page-subtitle">Digite um número de 0 a 10</p>
+          <input type="number" id="chute" /><br />
+          <button type="submit" id="chutar" onclick="chutar()">Chutar</button>
+          <button id="recomecar" onclick="reload()" style="display: none;">
+            Jogar Novamente
+          </button>
+          <h2 class="resultado" id="resultado"></h2>
+    
+          
+        </div>
+        <a href="https://alura.com.br/" target="_blank">
+          <img
+            src="https://www.alura.com.br/assets/img/home/alura-logo.svg"
+            alt=""
+            class="alura-logo"
+          />
+        </a>
+        <script src="script.js"></script>
+      </body>
+    </html>
+
+<!--/*
+var numeroSecreto = parseInt(Math.random() * 11);
+var chances = [];
+function Chutar() {
+  var elementoResultado = document.getElementById("resultado");
+  var chute = parseInt(document.getElementById("valor").value);
+  chances.push(chute);
+  if (chances.length > 3) {
+    alert("Suas chances acabaram!");
+  } else if (chute == numeroSecreto) {
+    console.log("acertou");
+    elementoResultado.innerHTML = "Você acertou";
+  } else if (chute > 10 || chute < 0) {
+    alert("Você deve digitar um número de 0 a 10");
+    elementoResultado.innerHTML = "Você deve digitar um número de 0 a 10";
+  } else if (chute > numeroSecreto) {
+    elementoResultado.innerHTML = "Errou, o número secreto é menor";
+  } else {
+    console.log("errou");
+    elementoResultado.innerHTML = `Errou, o número secreto é maior`;
+  }
+}
+
+if (!chute) {
+        return alert("dihite um número de 0 a 10 para testar sua sorte!");}*/-->
